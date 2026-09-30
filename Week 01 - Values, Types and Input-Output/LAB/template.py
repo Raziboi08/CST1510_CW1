@@ -2,9 +2,9 @@
 RECORD CHECK  -  my version
 ===========================
 
-Name  :
-Lane  :  AI / Cyber / IT      (delete two)
-Date  :
+Name  : Razvan 
+Lane  : Cyber
+Date  : 28/09/2026
 
 Run it:   python template.py
 
@@ -21,10 +21,9 @@ Delete these instructions as you replace them with your code.
 #
 #    Remember: input() always gives back text.
 
-label = ""      # : replace with an input() call
-first = 0.0     # : replace with an input() call, converted
-second = 0.0    # : replace with an input() call, converted
-
+source_ip = input("Enter the source IP: ")
+failed_logins = float(input("Enter failed logins: "))
+total_attempts = float(input("Enter total attempts: "))
 
 # ================================================================== PROCESS
 # 2. Work out what you were NOT given.       [Typical and above]
@@ -34,8 +33,12 @@ second = 0.0    # : replace with an input() call, converted
 #
 #    Do not type the answers. Calculate them.
 
-difference = 0.0   # 
-percent = 0.0      # 
+
+successful_logins = total_attempts - failed_logins
+failed_percentage = (failed_logins / total_attempts) * 100
+
+# This helps compare successful and failed login activity.
+successful_percentage = (successful_logins / total_attempts) * 100
 
 
 # =================================================================== OUTPUT
@@ -50,12 +53,16 @@ percent = 0.0      #
 
 print()
 print("=" * 34)
-print(f"  RECORD CHECK  -  {label}")
+print(f"  RECORD CHECK  -  {source_ip}")
 print("=" * 34)
 
 # : your report lines go here
 
-print("=" * 34)
+print(f"  Failed logins : {failed_logins:>10.2f}")
+print(f"  Total attempts: {total_attempts:>10.2f}")
+print(f"  Successful    : {successful_logins:>+10.2f}")
+print(f"  Failed rate   : {failed_percentage:>10.2f} %")
+print(f"  Success rate  : {successful_percentage:>10.2f} %")
 
 
 # ==========================================================================

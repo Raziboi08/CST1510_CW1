@@ -1,0 +1,45 @@
+Python basics
+
+Python runs instructions from top to bottom. A simple program has three parts: input, processing and output.
+
+Input means asking the user to enter information, such as a name or two numbers. Python receives this information as text. Numbers must be converted before they can be used in calculations.
+
+Variables store information so the program can use it later. Each variable should have a clear name that explains what it holds.
+
+A string is text, an integer is a whole number, and a float is a number that can include decimal places. Using floats allows the user to enter whole numbers or decimals.
+
+Processing means doing something with the information entered. This could mean adding two numbers, finding the difference or calculating a percentage.
+
+Output means showing the results on the screen. Clear labels help the user understand what each result means. Numbers can be displayed to two decimal places to make the results easier to read.
+
+Comments explain what parts of the program do. They help people understand the work, but Python does not run them.
+
+When a program has an error, read the last line of the error message first. Then check the line number, spelling, brackets and quotation marks.
+
+Testing means running the program with different values and checking that the results are correct.
+
+Git and GitHub
+
+Git tracks changes to my work. A commit saves a checkpoint with a message explaining the changes. Pushing uploads these saved changes to GitHub.
+
+Before uploading, I should save my files and check that I am working in the correct project folder and using the correct GitHub repository.
+Comparisons
+Comparisons check values and give True or False. == means equal to, != means not equal to, < means less than, and > means greater than. <= and >= also include equal values. = stores a value, but == checks whether two values match. Example: age = 18 stores 18, while age == 18 checks the age.
+
+Combining conditions
+and means both conditions must be True. or means at least one must be True. not reverses True and False. Example: age >= 18 and has_ticket checks that someone is at least 18 and has a ticket. not has_ticket is True when they do not have one.
+
+Decisions
+if checks the first condition. elif checks another condition if the earlier one was False. else runs if none of the conditions were True. Python only runs the first matching branch. Example: a mark of 70 or more gets “Distinction”, otherwise 60 or more gets “Merit”, otherwise it gets “Keep practising”.
+
+Indentation
+Indentation means leaving spaces at the start of a line, normally four spaces for each level. It shows which lines belong inside a decision or loop. Example: an indented print below an if only runs when that condition is True.
+
+While loops
+A while loop repeats while its condition is True. Something must eventually make the condition False, or a break must stop it, otherwise it keeps going forever. while True repeats until stopped, usually with break. continue skips the rest of the current repetition and starts the next one. Example: keep asking for a password until it is correct, then use break.
+
+For loops
+A for loop goes through values one at a time. range(stop) starts at 0, while range(start, stop, step) lets me choose the starting number and how much it changes each time. The stop number is never included. Example: range(3) gives 0, 1, 2, and range(2, 8, 2) gives 2, 4, 6. enumerate() gives both the position and the item, with positions starting at 0 by default.
+
+For or while?
+I use for when I know how many repetitions I need or want to go through items in a collection. I use while when repetition depends on a condition and I do not know how many attempts it will take. Example: use for to ask five questions and while to keep asking until the user enters a valid answer.
