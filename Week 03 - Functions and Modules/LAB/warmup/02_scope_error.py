@@ -6,7 +6,5 @@ import re
 
 def check(value, limit):
     status = "OVER LIMIT" if value > limit else "OK"
-
-check(87, 100)
-
-return status
+    return status
+print(check(23.7, 20))
