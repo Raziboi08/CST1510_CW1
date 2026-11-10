@@ -6,7 +6,6 @@ Name  : Razvan Jipa
 Lane  : cyber security 
 Date  : 02/11/2026
 
-Run it: python template.py
 """
 
 # ====================================================================== CLASS
