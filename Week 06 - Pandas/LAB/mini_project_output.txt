@@ -1,0 +1,22 @@
+All login records:
+  source_ip  failed_logins  total_attempts  percent      status
+0  10.0.0.1             12             400      3.0          OK
+1  10.0.0.2             95             100     95.0     WARNING
+2  10.0.0.3            100             100    100.0  OVER LIMIT
+3  10.0.0.4             45             100     45.0          OK
+4  10.0.0.5            180             200     90.0     WARNING
+5  10.0.0.6            200             200    100.0  OVER LIMIT
+
+Records that are not OK:
+  source_ip  failed_logins  total_attempts  percent      status
+1  10.0.0.2             95             100     95.0     WARNING
+2  10.0.0.3            100             100    100.0  OVER LIMIT
+4  10.0.0.5            180             200     90.0     WARNING
+5  10.0.0.6            200             200    100.0  OVER LIMIT
+
+Count per status:
+status
+OK            2
+OVER LIMIT    2
+WARNING       2
+dtype: int64
